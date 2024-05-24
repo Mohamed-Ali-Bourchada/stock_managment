@@ -74,9 +74,8 @@
 </svg>
 
 
-
-  <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 230px; height:100vh">
-    <a href="/" class="d-flex align-text-center  text-white text-decoration-none">
+<main class="d-flex justify-content-around">
+  <div class="d-flex flex-column flex-shrink-0 d-flex justify-content-start p-3 text-bg-dark" style="width: 230px; height:100vh">
       <span class="fs-4">Management</span>
     </a>
     <hr>
@@ -125,13 +124,39 @@
         <li><a class="dropdown-item"  href="#">Sign out</a></li>
       </ul>
     </div>
+  
   </div>
 
+<div class="container">
+  <h1 class="mt-5 mb-4">Add Product</h1>
+  <form>
+    <div class="mb-3">
+      <label for="productName" class="form-label">Product Name</label>
+      <input type="text" class="form-control" id="productName" placeholder="Enter product name">
+    </div>
+    <div class="mb-3">
+      <label for="productDescription" class="form-label">Product Description</label>
+      <textarea class="form-control" id="productDescription" rows="3" placeholder="Enter product description"></textarea>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <label for="productPrice" class="form-label">Product Price</label>
+        <div class="input-group">
+          <span class="input-group-text">$</span>
+          <input type="text" class="form-control" id="productPrice" placeholder="Enter product price">
+        </div>
+      </div>
+      <div class="col">
+        <label for="productImage" class="form-label">Product Image</label>
+        <input type="file" class="form-control" id="productImage">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
 
-
-
-
-
-
-
+</main>
+<!-- Bootstrap JS (optional, for certain components like dropdowns, popovers, etc.) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-BT6C5gtDDTKlH7j8UUW14I6vJUHcU7jpq9qbl4DBshqsq8ibG0BxOnF4+VtGI6mD" crossorigin="anonymous"></script>
+</body>
 </html>
